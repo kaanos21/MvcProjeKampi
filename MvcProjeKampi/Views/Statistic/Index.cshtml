@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>İstatistikler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">İstatistikler</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Toplam kategori sayısı </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="toplamKategori">@ViewBag.toplamkategori</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Yazılım Kategorisindeki Başlıklar  @ViewBag.yazılımkategori</div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="aHarfiGecenYazarSayisi">@ViewBag.yazılımkategori</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">'a' Harfi Geçen Yazar Sayısı </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="enFazlaBaslikliKategori">@ViewBag.aharfgeçensayı</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">En fazla başlığa sahip kategori adı </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="toplamKategori">@ViewBag.enfazlakategori</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">kategoride true false fark </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="aHarfiGecenYazarSayisi">@ViewBag.truefalsefark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+
