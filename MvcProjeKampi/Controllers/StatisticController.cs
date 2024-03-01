@@ -29,6 +29,7 @@ namespace MvcProjeKampi.Controllers
             int truefalse = ll - b;
             ViewBag.truefalsefark = truefalse.ToString();
             return View();
+            //lkjhnıu
         }
     }
 }
